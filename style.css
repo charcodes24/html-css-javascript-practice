@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;500&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
     /*add any padding doesnt effect the width of it*/
@@ -22,3 +22,4 @@ body {
     /*get rid of the margin*/
     margin: 0;
 }
+

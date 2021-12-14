@@ -63,6 +63,7 @@ body {
 .panel.active h3 {
     /*if active, let us see it*/
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 /*if screen is really small only show three of the divs*/

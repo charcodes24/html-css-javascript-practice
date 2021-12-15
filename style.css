@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;500&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
     /*add any padding doesnt effect the width of it*/
@@ -10,9 +10,8 @@ body {
     /*center eeverything more easily*/
     /*puts everything in a row*/
     display: flex;
-    /*puts everything back into column*/
-    flex-direction: column;
     /*if flex direction row it would center vertial, if column will center horizontal*/
+    flex-direction: column;
     align-items: center;
     /*will center items horizontal if not already NEEDS TO HAVE A HEIGHT THO*/
     justify-content: center;

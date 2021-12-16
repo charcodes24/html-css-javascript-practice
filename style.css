@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
     --line-border-fill: #3498db;    
@@ -11,18 +11,68 @@
 }
 
 body {
-    background-color: #f6f7fb;
-    font-family: 'Muli', sans-serif;
-    /*center eeverything more easily*/
-    /*puts everything in a row*/
-    display: flex;
-    /*if flex direction row it would center vertial, if column will center horizontal*/
-    align-items: center;
-    /*will center items horizontal if not already NEEDS TO HAVE A HEIGHT THO*/
-    justify-content: center;
-    height: 100vh;
-    /*so that scroll bars aren't shown by default*/
-    /* overflow: hidden; */
+    background-color: #333;
+    color: #222
+    /*only hides scroll bar on x axis*/
+    overflow-x: hidden;
     /*get rid of the margin*/
     margin: 0;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container.show-nav {
+    transform: rotate(-20deg)
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content img {
+    max-width: 100%;
 }

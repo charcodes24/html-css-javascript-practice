@@ -18,7 +18,7 @@ body {
     justify-content: center;
     height: 100vh;
     /*so that scroll bars aren't shown by default*/
-    overflow: hidden;
+    /* overflow: hidden; */
     /*get rid of the margin*/
     margin: 0;
 }

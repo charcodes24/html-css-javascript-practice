@@ -13,7 +13,7 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: #333;
-    color: #222
+    color: #222;
     /*only hides scroll bar on x axis*/
     overflow-x: hidden;
     /*get rid of the margin*/
@@ -46,6 +46,10 @@ body {
     border-radius: 50%;
     position: relative;
     transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle{
+    transform: rotate(-70deg)
 }
 
 .circle button {
